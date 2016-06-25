@@ -3,11 +3,15 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <!-- Spacing -->
+    <dimen name="space_small_8">8dp</dimen>
+    <dimen name="space_normal_16">16dp</dimen>
+    <dimen name="space_medium_32">32dp</dimen>
+    
     <!-- Sizes -->
-    <dimen name="small_font">12dp</dimen>
-    <dimen name="medium_font">24dp</dimen>
-    <dimen name="large_font">48dp</dimen>
-
+    <dimen name="size_small_24">24dp</dimen>
+    <dimen name="size_big_72">72dp</dimen>
+    <dimen name="size_line">2dp</dimen>
 
 
 </resources>

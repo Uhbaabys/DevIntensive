@@ -1,16 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ui.activities.MainActivity">
+    tools:context=".ui.activities.MainActivity"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@color/dark_gray"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/size_small_24"
+            android:layout_marginRight="@dimen/size_small_24"
+            android:layout_gravity="center_vertical">
+            <TextView
+                style="@style/head_text_view"
+                android:text="5"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20dp"/>
+            <TextView
+                style="@style/head_text_view"
+                android:text="Рейтинг"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="72dp"
+            android:background="@color/gray_light"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+            <TextView
+                style="@style/head_text_view"
+                android:text="5"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20dp"/>
+            <TextView
+                style="@style/head_text_view"
+                android:text="Написано строк кода"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="72dp"
+            android:background="@color/gray_light"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/size_small_24"
+            android:layout_marginRight="@dimen/size_small_24"
+            android:layout_gravity="center_vertical">
+            <TextView
+                style="@style/head_text_view"
+                android:text="5"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="20dp"/>
+            <TextView
+                style="@style/head_text_view"
+                android:text="Рейтинг"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/liner_layout_item">
+
+        <ImageView
+            style="@style/icon.icon_left"
+            android:src="@drawable/ic_call_black_24dp"/>
+
+        <LinearLayout
+            style="@style/liner_layout_edit">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/edit_text"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="@string/hint_phone_number"
+                    android:text="88888888888"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/icon.icon_right"
+            android:src="@drawable/ic_phone_in_talk_black_24dp"/>
+    </LinearLayout>
+
+    <View
+        style="@style/line_view"/>
+
+
+
+<LinearLayout
+style="@style/liner_layout_item">
+
+<ImageView
+    style="@style/icon.icon_left"
+    android:src="@drawable/ic_email_black_24dp"/>
+
+<LinearLayout
+    style="@style/liner_layout_edit">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/edit_text"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/mail"
+            android:text="mr.verygood@inbox.ru"/>
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
+
+<ImageView
+    style="@style/icon.icon_right"
+    android:src="@drawable/ic_send_black_24dp"/>
+</LinearLayout>
+
+<View
+style="@style/line_view"/>
+
+
+    <LinearLayout
+        style="@style/liner_layout_item">
+
+        <ImageView
+            style="@style/icon.icon_left"
+            android:src="@drawable/vk_circle"/>
+
+        <LinearLayout
+            style="@style/liner_layout_edit">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/edit_text"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="@string/vk"
+                    android:text="vk.com/mr.verygood"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/icon.icon_right"
+            android:src="@drawable/ic_visibility_black_24dp"/>
+    </LinearLayout>
+
+    <View
+        style="@style/line_view"/>
+
+    <LinearLayout
+        style="@style/liner_layout_item">
+
+        <ImageView
+            style="@style/icon.icon_left"
+            android:src="@drawable/github_box"/>
+
+        <LinearLayout
+            style="@style/liner_layout_edit"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/edit_text"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="@string/github"
+                    android:text="github.com/Uhbaabys/DevIntensive"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/icon.icon_right"
+            android:src="@drawable/ic_visibility_black_24dp"/>
+    </LinearLayout>
+
+    <View
+        style="@style/line_view"/>
+
+    <LinearLayout
+        style="@style/liner_layout_item">
+
+        <ImageView
+            style="@style/icon.icon_left"
+            android:src="@drawable/account_circle"/>
+
+        <LinearLayout
+            style="@style/liner_layout_edit"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/edit_text"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="@string/about"
+                    android:text="Текст, подробно и красочно рассказывающий об авторе"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_view"/>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
