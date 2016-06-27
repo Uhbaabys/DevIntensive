@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">DevIntensive</string>
+    <string name="app_name">Диянов Никита</string>
+    <string name="hint_phone_number">Мобильный телефон</string>
+    <string name="mail">E-mail</string>
+    <string name="vk">Профиль в ВК</string>
+    <string name="github">Репозиторий</string>
+    <string name="about">О себе</string>
 </resources>
