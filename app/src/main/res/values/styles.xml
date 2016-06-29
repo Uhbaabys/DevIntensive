@@ -1,12 +1,21 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/color_Primary</item>
         <item name="colorPrimaryDark">@color/color_Primary_Dark</item>
         <item name="colorAccent">@color/color_Accent</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
     <style name="head_text_view">
         <item name="android:layout_width">wrap_content</item>
@@ -19,13 +28,13 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
-        <item name="android:layout_marginTop">@dimen/space_small_8</item>
-        <item name="android:layout_marginBottom">@dimen/space_small_8</item>
+        <item name="android:layout_marginTop">@dimen/space_8</item>
+        <item name="android:layout_marginBottom">@dimen/space_8</item>
     </style>
 
     <style name="liner_layout_edit">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">@dimen/size_big_72</item>
+        <item name="android:layout_height">@dimen/size_72</item>
         <item name="android:orientation">vertical</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_marginRight">@dimen/space_normal_16</item>
@@ -46,21 +55,25 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/size_line</item>
         <item name="android:background">@color/gray_light</item>
-        <item name="android:layout_marginLeft">@dimen/size_big_72</item>
+        <item name="android:layout_marginLeft">@dimen/size_72</item>
     </style>
 
     <style name="icon">
-        <item name="android:layout_width">@dimen/size_small_24</item>
-        <item name="android:layout_height">@dimen/size_small_24</item>
-        <item name="android:layout_marginTop">@dimen/size_small_24</item>
+        <item name="android:layout_width">@dimen/size_24</item>
+        <item name="android:layout_height">@dimen/size_24</item>
+        <item name="android:layout_marginTop">@dimen/size_24</item>
     </style>
 
     <style name="icon.icon_left">
-        <item name="android:layout_marginLeft">@dimen/size_small_24</item>
+        <item name="android:layout_marginLeft">@dimen/size_24</item>
     </style>
 
     <style name="icon.icon_right">
-        <item name="android:layout_marginRight">@dimen/size_small_24</item>
+        <item name="android:layout_marginRight">@dimen/size_24</item>
+    </style>
+    
+    <style name="custom_dialog">
+        <item name="android:fullDark">@android:color/transparent</item>
     </style>
 
 </resources>
